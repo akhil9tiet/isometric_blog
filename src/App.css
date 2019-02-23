@@ -19,7 +19,7 @@
   top: 30%;
   left: 10%;
 }
-#btn::before{
+#btn{
   height: 35px;
   width: 150px;
   background-color: #3e4532;
@@ -32,4 +32,13 @@
   top:55%;
   left:10%;
   cursor: pointer;
+}
+#btn::before{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 90px;
+  background-color: #3e4532100;
+  top:50%;
+  left: 100%;
 }
