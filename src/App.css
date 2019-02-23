@@ -19,3 +19,17 @@
   top: 30%;
   left: 10%;
 }
+#btn::before{
+  height: 35px;
+  width: 150px;
+  background-color: #3e4532;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top:55%;
+  left:10%;
+  cursor: pointer;
+}
