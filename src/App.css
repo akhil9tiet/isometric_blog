@@ -1,25 +1,26 @@
-.App{
-  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.App {
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   color: #141715;
   padding: 30px;
-	background: rgb(255, 255, 255);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  background: rgb(255, 255, 255);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-#main{
+#main {
   height: 100vh;
   width: 100%;
   position: absolute;
   overflow: hidden;
 }
-#msg{
+#msg {
   font-size: 4em;
   line-height: 60px;
   position: absolute;
   top: 30%;
   left: 10%;
 }
-#btn{
+#btn {
   height: 35px;
   width: 150px;
   background-color: #3e4532;
@@ -29,16 +30,16 @@
   text-align: center;
   line-height: 35px;
   position: absolute;
-  top:55%;
-  left:10%;
+  top: 55%;
+  left: 10%;
   cursor: pointer;
 }
-#btn::before{
-  content: '';
+#btn::before {
+  content: "";
   position: absolute;
   height: 3px;
   width: 90px;
   background-color: #3e4532100;
-  top:50%;
+  top: 50%;
   left: 100%;
 }
