@@ -1,7 +1,7 @@
 .grid-link {
   width: 210px;
   height: 310px;
-  background-color: #fff;
+  /* background-color: #fff; */
   position: absolute;
   transform: rotateX(55deg) rotateY(0deg) rotateZ(45deg);
   box-shadow: 13px 12px 15px -5px rgba(0, 0, 0, 0.3);
