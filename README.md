@@ -7,6 +7,7 @@
 ##Things I still need to do on this:
 
 - Automate the layout
+- lazy load
 - Image layout optimized so that the images do not look crooked
 - Making the grid look better
 - Make a higher order component
@@ -18,7 +19,6 @@
 ## Things unique about this project
 
 - Isometric layoout auto generation through react
--
 
 ## Sources:
 
