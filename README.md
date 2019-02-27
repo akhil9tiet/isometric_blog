@@ -1,3 +1,30 @@
+# Isometric Projection
+
+## Demo:
+
+![Demo](./screen.png)
+
+##Things I still need to do on this:
+
+- Automate the layout
+- Image layout optimized so that the images do not look crooked
+- Making the grid look better
+- Make a higher order component
+- On click it should be able to open up a blog
+- ReactRouter
+- Graphql for writing blogs
+- angle scroll
+
+## Things unique about this project
+
+- Isometric layoout auto generation through react
+-
+
+## Sources:
+
+- https://tympanus.net/codrops/2016/05/25/isometric-and-3d-grids/
+- https://www.youtube.com/watch?v=tqv223m9egg
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
