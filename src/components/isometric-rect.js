@@ -2,20 +2,23 @@ import React, { Component } from "react";
 import "./isometric-rect.css";
 import scene from "../posts/2019-02-23/scene.jpg";
 import image2 from "../posts/2019-02-26/image2.jpg";
-// import bear from "../posts/2019-02-27/bear.jpg";
-// import halo from "../posts/2019-02-28/halo.jpg";
-// import spark from "../posts/2019-03-01/spark.jpg";
-// import img3 from "../posts/2019-03-02/img3.jpg";
-// import img4 from "../posts/2019-03-03/img4.jpg";
+import bear from "../posts/2019-02-27/bear.jpg";
+import halo from "../posts/2019-02-28/halo.jpg";
+import spark from "../posts/2019-03-01/spark.jpg";
+import img3 from "../posts/2019-03-02/img3.jpg";
+import img4 from "../posts/2019-03-03/img4.jpg";
 
 /*Higher order component*/
 const Rect = props => {
 	console.log(props);
+	var style = {
+		d: {
+			top: props.top * 360,
+			right: props.right * 360
+		}
+	};
 	return (
-		// <div>
-		// 	<h2>{props.b}</h2>
-		// </div>
-		<div className="grid-link" id={props.id}>
+		<div className="grid-link" style={style.d}>
 			<img src={props.img_src} alt={props.alt} />
 		</div>
 	);
@@ -26,8 +29,15 @@ class IsometricRect extends Component {
 		return (
 			<div>
 				<h2>thid is smerics</h2>
-				<Rect id="d1" img_src={scene} alt="Tab" />
-				<Rect id="d2" img_src={image2} alt="newtab" />
+				{/* <Rect id="d1" img_src={scene} alt="Tab" top={-9} right={7} />
+				<Rect id="d2" img_src={image2} alt="newtab" top={12} right={9} /> */}
+				<Rect img_src={scene} alt="Tab" top={-0.09} right={-0.07} />
+				<Rect img_src={image2} alt="newtab" top={0.31} right={0.6} />
+				<Rect img_src={bear} alt="bear" top={0.7} right={0.18} />
+				{/* <Rect img_src={halo} alt="halo" top={0.54} right={0.41} />
+				<Rect img_src={spark} alt="spark" top={0.18} right={-0.9} />
+				<Rect img_src={img3} alt="img3" top={0.39} right={0.7} />
+				<Rect img_src={img4} alt="img4" top={0.6} right={0.23} /> */}
 			</div>
 		);
 	}
