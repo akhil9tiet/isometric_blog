@@ -8,35 +8,36 @@ import spark from "../posts/2019-03-01/spark.jpg";
 import img3 from "../posts/2019-03-02/img3.jpg";
 import img4 from "../posts/2019-03-03/img4.jpg";
 
+/*Higher order component*/
+const Rect = props => {
+	console.log(props);
+	var style = {
+		d: {
+			top: props.top * 360,
+			right: props.right * 360
+		}
+	};
+	return (
+		<div className="grid-link" style={style.d}>
+			<img src={props.img_src} alt={props.alt} />
+		</div>
+	);
+};
+
 class IsometricRect extends Component {
-  render() {
-    // var posts = 10;
-    return (
-      <div>
-        <div className="grid-link" id="d1">
-          <img src={scene} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d2">
-          <img src={image2} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d3">
-          <img src={bear} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d4">
-          <img src={halo} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d5">
-          <img src={spark} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d6">
-          <img src={img3} alt="Tab" />
-        </div>
-        <div className="grid-link" id="d7">
-          <img src={img4} alt="Tab" />
-        </div>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className="isolayer isolayer--scroll1 isolayer--shadow">
+				<Rect img_src={scene} alt="Tab" top={-0.09} right={-0.07} />
+				<Rect img_src={image2} alt="newtab" top={0.31} right={0.6} />
+				<Rect img_src={bear} alt="bear" top={0.7} right={0.18} />
+				{/* <Rect img_src={halo} alt="halo" top={0.54} right={0.41} />
+				<Rect img_src={spark} alt="spark" top={0.18} right={-0.9} />
+				<Rect img_src={img3} alt="img3" top={0.39} right={0.7} />
+				<Rect img_src={img4} alt="img4" top={0.6} right={0.23} /> */}
+			</div>
+		);
+	}
 }
 
 export default IsometricRect;
