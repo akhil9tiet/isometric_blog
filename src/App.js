@@ -18,7 +18,7 @@ class App extends Component {
 				{/* This is for ,aking a side menu which scrolls on bottom of the screen */}
 				{/* <header/>  */}
 
-				<IsometricRect className="Romu" alpha="true" />
+				<IsometricRect />
 			</div>
 		);
 	}
