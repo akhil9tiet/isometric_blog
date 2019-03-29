@@ -7,14 +7,14 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<div id="main">
+				{/* <div id="main">
 					<div id="msg">
 						Recent
 						<br />
 						Work
 					</div>
 					<div id="btn"> Find more</div>
-				</div>
+				</div> */}
 				{/* This is for ,aking a side menu which scrolls on bottom of the screen */}
 				{/* <header/>  */}
 
