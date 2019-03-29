@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./isometric-rect.css";
+// import "./isometric-rect.css";
 import scene from "../posts/2019-02-23/scene.jpg";
 import image2 from "../posts/2019-02-26/image2.jpg";
 import bear from "../posts/2019-02-27/bear.jpg";
@@ -18,7 +18,8 @@ const Rect = props => {
 		}
 	};
 	return (
-		<div className="grid-link" style={style.d}>
+		// <div className="grid-link" style={style.d}>
+		<div className="grid-link">
 			<img src={props.img_src} alt={props.alt} />
 		</div>
 	);
