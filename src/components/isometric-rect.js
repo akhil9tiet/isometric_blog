@@ -27,10 +27,7 @@ const Rect = props => {
 class IsometricRect extends Component {
 	render() {
 		return (
-			<div>
-				<h2>thid is smerics</h2>
-				{/* <Rect id="d1" img_src={scene} alt="Tab" top={-9} right={7} />
-				<Rect id="d2" img_src={image2} alt="newtab" top={12} right={9} /> */}
+			<div className="isolayer isolayer--scroll1 isolayer--shadow">
 				<Rect img_src={scene} alt="Tab" top={-0.09} right={-0.07} />
 				<Rect img_src={image2} alt="newtab" top={0.31} right={0.6} />
 				<Rect img_src={bear} alt="bear" top={0.7} right={0.18} />
