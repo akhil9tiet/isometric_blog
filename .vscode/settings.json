@@ -1,0 +1,7 @@
+{
+  "prettier.jsxBracketSameLine": true,
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 1000
+}
